@@ -16,7 +16,7 @@ The system consists of two sensing subsystems:
 - ACS712 current sensing.
 - ESP32-based analog signal acquisition.
 - RMS and peak current calculation.
-- PWM-based motor speed control through the L298N motor driver.
+- Motor enable and direction control through the L298N motor driver (the current firmware does not implement PWM speed control).
 
 ### MFL
 
@@ -41,7 +41,10 @@ The interface provides visibility into the measured motor current and magnetic s
 
 The integrated prototype demonstrates the operation of MCSA and MFL sensing within a common monitoring system.
 
-**Demonstration Video:** [Add video link here]
+**Demonstration videos:**
+
+- [Project demonstration 1](https://www.youtube.com/watch?v=mVGQFcpraKI)
+- [Project demonstration 2](https://www.youtube.com/watch?v=Fp9mtmHKMNk)
 
 ## 6. Source Code
 
