@@ -125,28 +125,26 @@ The following videos showcase the hardware implementation, subsystem testing and
 ```text
 intelligent-conveyor-monitoring/
 │
-├── MCSA/
-│   └── MCSA.ino
-│
-├── MFL/
-│   └── MFL.ino
+├── Documentation/
+│   └── Images/
+│       ├── README.md
+│       ├── prototype photographs
+│       └── demonstration video
 │
 ├── Integrated_System/
-│   └── Integrated_MCSA_MFL.ino
+│   ├── Integrated_MCSA_MFL.ino
+│   └── README.md
 │
-├── Hardware/
-│   ├── Circuit_Diagrams/
-│   ├── Pin_Connections/
-│   └── Components_List.md
+├── MCSA/
+│   └── README.md
 │
-├── Documentation/
-│   ├── Project_Report.pdf
-│   └── Experimental_Results/
+├── MFL/
+│   └── README.md
 │
 └── README.md
 ```
 
-*The directory structure will be updated to match the actual source files.*
+This tree reflects the files currently present in the repository. Subsystem-specific firmware, circuit diagrams, component lists and measured experimental results should be added when they are available; they are not represented as existing files here.
 
 ## 11. Future Scope
 
