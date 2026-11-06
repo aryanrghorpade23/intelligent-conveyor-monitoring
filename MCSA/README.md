@@ -45,6 +45,10 @@ Where:
 - V_offset = Sensor output voltage at zero current
 - S = Sensor sensitivity
 
+### Calibration Note
+
+The integrated firmware currently assumes a zero-current output of 1.65 V and a sensitivity of 0.033 V/A for the ACS712 calculation. These are firmware constants, not verified measurements of the installed sensor. Confirm the exact ACS712 variant, measure its zero-current output, and calibrate its sensitivity before relying on the displayed current values. The reported RMS and peak values should be treated as estimates until this validation is complete.
+
 ### 4.2 RMS Current Calculation
 
 RMS current represents the effective current value over a selected sampling window.
