@@ -37,7 +37,32 @@ The acquired measurements are made available through the Blynk monitoring dashbo
 
 The interface provides visibility into the measured motor current and magnetic sensor response.
 
-## 5. Demonstration
+## 5. Firmware Connections and Dashboard Mapping
+
+The current integrated firmware uses the following ESP32 GPIO assignments:
+
+| Function | ESP32 GPIO |
+|---|---:|
+| L298N enable (ENA) | 25 |
+| L298N direction input 1 (IN1) | 26 |
+| L298N direction input 2 (IN2) | 27 |
+| ACS712 current-sensor analog output | 34 |
+| Voltage-monitor analog input | 32 |
+| MFL Hall-sensor analog output | 35 |
+
+The Blynk virtual-pin mapping in the firmware is:
+
+| Virtual pin | Measurement |
+|---|---|
+| V0 | MCSA RMS current estimate (A) |
+| V1 | MCSA peak current estimate (A) |
+| V2 | MFL signal amplitude (V) |
+| V3 | Derived MFL metric (relative until calibrated) |
+| V5 | Voltage-monitor value (scaled estimate) |
+
+Check the actual wiring, sensor variant, voltage-divider ratios and calibration constants before powering the circuit. These values describe the current source code and are not a substitute for hardware verification.
+
+## 6. Demonstration
 
 The integrated prototype demonstrates the operation of MCSA and MFL sensing within a common monitoring system.
 
@@ -46,11 +71,11 @@ The integrated prototype demonstrates the operation of MCSA and MFL sensing with
 - [Project demonstration 1](https://www.youtube.com/watch?v=mVGQFcpraKI)
 - [Project demonstration 2](https://www.youtube.com/watch?v=Fp9mtmHKMNk)
 
-## 6. Source Code
+## 7. Source Code
 
 The complete integrated ESP32 firmware will be maintained in this directory.
 
-## 7. Future Scope
+## 8. Future Scope
 
 - Advanced signal processing.
 - Improved magnetic defect detection.
