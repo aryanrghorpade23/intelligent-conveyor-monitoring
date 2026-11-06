@@ -52,7 +52,7 @@ Where:
 - S_B = Sensor sensitivity
 - B = Measured magnetic flux density component
 
-The measured output is analysed to investigate variations in the magnetic field.
+The measured output is analysed to investigate variations in the magnetic field. The sensor sensitivity, orientation, operating range and any voltage-divider scaling must be calibrated for the exact hardware. Until that calibration is completed, the firmware-derived magnetic metric should be treated as a relative indicator rather than a traceable magnetic-field measurement.
 
 ## 6. Software and Processing
 
