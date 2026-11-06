@@ -53,11 +53,7 @@ The ESP32 samples the sensor output and processes the acquired signal to calcula
 - Peak Current
 - Variations in motor loading
 
-The RMS current is calculated using:
-
-I_RMS = sqrt((1/N) * sum(i[k]^2))
-
-where N is the number of samples and i[k] represents the sampled current.
+The firmware estimates RMS current over a short sampling window using the configured ACS712 zero-current offset and sensitivity. These calibration values must be verified against the exact sensor variant and measured hardware before the displayed current can be treated as accurate.
 
 These measurements help investigate abnormal loading conditions, excessive friction, motor loading variations and possible mechanical problems.
 
@@ -72,7 +68,7 @@ The sensing arrangement investigates the difference between:
 - Magnetic response of an intact ferromagnetic element.
 - Magnetic response when a discontinuity is introduced.
 
-Changes in the measured Hall-sensor output are analysed to investigate the presence of material discontinuities.
+Changes in the measured Hall-sensor output are analysed as a magnetic-response indicator. The Hall sensitivity and voltage-divider scaling in firmware require calibration against the actual sensor and measurement circuit before the derived value can be interpreted as an absolute magnetic-field measurement.
 
 The prototype demonstrates the sensing principle on a simplified ferromagnetic test element. It is not yet a full-width industrial steel-cord inspection system.
 
@@ -102,7 +98,7 @@ The prototype demonstrates the sensing principle on a simplified ferromagnetic t
 
 The prototype demonstrates the integration and operation of both MCSA and MFL sensing systems.
 
-Experimental observations include motor current measurements and magnetic-field response analysis under the tested conditions.
+The prototype provides live sensor measurements for demonstration. Quantitative test results, calibration records, repeatability measurements and fault-detection accuracy have not yet been published in this repository.
 
 
 ---
