@@ -104,9 +104,23 @@ The prototype demonstrates the integration and operation of both MCSA and MFL se
 
 Experimental observations include motor current measurements and magnetic-field response analysis under the tested conditions.
 
-**Demonstration Video:** [Add video link here]
 
-## 9. Repository Structure
+---
+
+## 9. Project Demonstration Videos
+
+The following videos showcase the hardware implementation, subsystem testing and integrated operation of the Intelligent Conveyor Belt Health Monitoring System.
+
+### Demonstration Video 1
+
+[Watch Project Demonstration](https://www.youtube.com/watch?v=mVGQFcpraKI)
+
+### Demonstration Video 2
+
+[Watch Project Demonstration](https://www.youtube.com/watch?v=Fp9mtmHKMNk)
+
+
+## 10. Repository Structure
 
 ```text
 intelligent-conveyor-monitoring/
@@ -134,7 +148,7 @@ intelligent-conveyor-monitoring/
 
 *The directory structure will be updated to match the actual source files.*
 
-## 10. Future Scope
+## 11. Future Scope
 
 - Advanced frequency-domain current analysis using FFT.
 - Multi-sensor Hall-effect arrays for wider magnetic inspection.
@@ -144,7 +158,7 @@ intelligent-conveyor-monitoring/
 - Industrial PLC and SCADA integration.
 - Validation on actual conveyor belt systems.
 
-## 11. Limitations
+## 12. Limitations
 
 - The prototype has been developed and demonstrated under laboratory conditions.
 - The MFL arrangement uses a simplified ferromagnetic test element and a Hall-effect sensing arrangement.
@@ -152,7 +166,7 @@ intelligent-conveyor-monitoring/
 - Current-based fault diagnosis requires further validation under different operating conditions.
 - Industrial deployment requires ruggedized sensing hardware and additional validation.
 
-## 12. Project Information
+## 13. Project Information
 
 | Parameter | Details |
 |---|---|
